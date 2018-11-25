@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Book Inventory App</string>
+    <string name="book_detail_activity_label">Book Details</string>
+    <string name="book_name">Book name</string>
+    <string name="book_price">Book price</string>
+    <string name="book_quantity">Book quantity</string>
+    <string name="book_supplier_name">Book supplier name</string>
+    <string name="book_supplier_contact">Book supplier contact</string>
+    <string name="add_book_to_inventory">Add book to inventory</string>
+
+    <string name="book_name_required">Book name required</string>
+    <string name="book_price_required">Book price required</string>
+    <string name="book_price_can_not_be_less">Book price can\'t be less than 0</string>
+    <string name="book_quantity_required">Book quantity required</string>
+    <string name="book_quantity_can_not_be_less">Book quantity can\'t be less than 0</string>
+    <string name="book_supplier_name_required">Book supplier name required</string>
+    <string name="book_supplier_contact_required">Book supplier contact required</string>
+    <string name="delete_all_books">Delete All Books</string>
+    <string name="empty_state_header">It\'s empty in here…</string>
+    <string name="empty_state_subtitle">Get started by adding a Book</string>
+    <string name="sale">Sale</string>
+    <string name="book_price_icon">Book price icon</string>
+    <string name="book_quantity_icon">Book quantity icon</string>
+    <string name="book_quantity_increment_icon">Book quantity increment icon</string>
+    <string name="book_quantity_decrement_icon">Book quantity decrement icon</string>
+    <string name="book_supplier_icon">Book supplier icon</string>
+    <string name="book_supplier_contact_icon">Book supplier contact icon</string>
+    <string name="delete_book">Delete Book</string>
+    <string name="edit">Edit</string>
+    <string name="add_book">Add Book</string>
+    <string name="add_book_appbar_title">Add Book</string>
+    <string name="update_book">Update Book</string>
+    <string name="edit_book_appbar_title">Edit Book</string>
+    <string name="error_saving_book">Error with saving Book</string>
+    <string name="book_saved">Book saved</string>
+    <string name="error_updating_book">Error with updating Book</string>
+    <string name="book_updated">Book updated</string>
+    <string name="discard_changes">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_this_book">Delete this book?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_deleting_book">Error with deleting Book</string>
+    <string name="book_deleted">Book deleted</string>
+    <string name="book_inventory_is_empty">Book Inventory is empty. Tap the FAB icon to add a Book.</string>
+    <string name="delete_all_book_entries">Delete all book entries?</string>
+    <string name="one_copy_sold">One copy sold</string>
+    <string name="out_of_stock">This book is out of stock</string>
+    <string name="tel">tel</string>
+    <string name="book_quantity_increment_successful">Book quantity increment successful</string>
+    <string name="book_quantity_decrement_successful">Book quantity decrement successful</string>
+
+</resources>

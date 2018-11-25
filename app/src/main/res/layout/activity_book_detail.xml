@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailActivity">
+
+    <TextView
+        android:id="@+id/bookDetailsNameTextView"
+        style="@style/BookTitleTextViewStyle"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetailsNameTextView" />
+
+    <ImageView
+        android:id="@+id/bookDetailsPriceIconImageView"
+        style="@style/BookDetailsImageViewStyle"
+        android:contentDescription="@string/book_price_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_book_price" />
+
+    <TextView
+        android:id="@+id/bookDetailsPriceTextView"
+        style="@style/BookDetailsTextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsPriceIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/bookDetailsPriceIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsPriceIconImageView" />
+
+    <ImageView
+        android:id="@+id/bookDetailsQuantityIconImageView"
+        style="@style/BookDetailsImageViewStyle"
+        android:contentDescription="@string/book_quantity_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetailsPriceIconImageView"
+        app:srcCompat="@drawable/ic_book_quantity" />
+
+    <TextView
+        android:id="@+id/bookDetailsQuantityTextView"
+        style="@style/BookDetailsTextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsQuantityIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/bookDetailsQuantityIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsQuantityIconImageView" />
+
+    <ImageView
+        android:id="@+id/bookDetailsIncrementQuantityButtonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/book_quantity_increment_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsQuantityTextView"
+        app:layout_constraintEnd_toStartOf="@+id/bookDetailsDecrementQuantityButtonImageView"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsQuantityTextView"
+        app:srcCompat="@drawable/ic_increment_book_quantity" />
+
+    <ImageView
+        android:id="@+id/bookDetailsDecrementQuantityButtonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/book_quantity_decrement_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsIncrementQuantityButtonImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsIncrementQuantityButtonImageView"
+        app:srcCompat="@drawable/ic_decrement_book_quantity" />
+
+    <ImageView
+        android:id="@+id/bookDetailsSupplierIconImageView"
+        style="@style/BookDetailsImageViewStyle"
+        android:contentDescription="@string/book_supplier_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetailsQuantityIconImageView"
+        app:srcCompat="@drawable/ic_book_supplier" />
+
+    <TextView
+        android:id="@+id/bookDetailsSupplierNameTextView"
+        style="@style/BookDetailsTextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsSupplierIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/bookDetailsSupplierIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsSupplierIconImageView" />
+
+    <ImageView
+        android:id="@+id/bookDetailsSupplierContactIconImageView"
+        style="@style/BookDetailsImageViewStyle"
+        android:contentDescription="@string/book_supplier_contact_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetailsSupplierIconImageView"
+        app:srcCompat="@drawable/ic_book_supplier_phone" />
+
+    <TextView
+        android:id="@+id/bookDetailsSupplierContactTextView"
+        style="@style/BookDetailsTextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/bookDetailsSupplierContactIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/bookDetailsSupplierContactIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/bookDetailsSupplierContactIconImageView" />
+
+    <Button
+        android:id="@+id/deleteBookButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/delete_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookDetailsSupplierContactTextView"
+        app:layout_constraintVertical_bias="0.3" />
+
+</android.support.constraint.ConstraintLayout>
